@@ -3,6 +3,7 @@ import "./Home.css";
 import { Link } from "react-router-dom";
 import AppsIcon from "@material-ui/icons/Apps";
 import { Avatar } from "@material-ui/core";
+import Search from "../components/Search";
 
 function Home() {
   return (
@@ -20,7 +21,12 @@ function Home() {
           <Avatar />
         </div>
       </div>
-      <div className="home_body"></div>
+      <div className="home_body">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/3/38/PP_icono_2019.svg" />
+        <div className="input_container">
+          <Search />
+        </div>
+      </div>
     </div>
   );
 }
