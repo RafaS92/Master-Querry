@@ -49,3 +49,7 @@
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
   background-image: -webkit-linear-gradient(top, #eee234d0, #e6e6e6);
 }
+
+.search_buttonsHid {
+  display: none !important;
+}
