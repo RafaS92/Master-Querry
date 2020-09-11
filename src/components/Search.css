@@ -4,8 +4,48 @@
   border: 1px solid rgb(245, 162, 8);
   height: 30px;
   padding: 10px 20px;
-  border-radius: 999px;
+  border-radius: 99px;
   width: 75vw;
   margin: auto;
   margin-top: 40px;
+  max-width: 560;
+}
+
+.search_input > input {
+  flex: 1;
+  padding: 10px 20px;
+  font-size: medium;
+  border: none;
+}
+
+.search_input > input:focus {
+  outline-width: 0px;
+}
+
+.search_inputIcon {
+  color: rgb(7, 11, 224);
+}
+
+.search_buttons {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.search_buttons button {
+  margin: 5px;
+  padding: 7px 35px;
+  background-color: hotpink;
+  font-weight: 500;
+  font-size: 14px;
+  border: 1px solid black;
+  border-radius: 5px;
+  text-transform: inherit;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.search_buttons button:hover {
+  background-color: rgb(243, 200, 57);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  background-image: -webkit-linear-gradient(top, #eee234d0, #e6e6e6);
 }
