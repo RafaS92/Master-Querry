@@ -3,6 +3,7 @@ import { useStateValue } from "../stateProvider";
 
 function SearchPage() {
   const [{ term }, dispatch] = useStateValue();
+
   return (
     <div className="searchPage">
       <div className="searchPage_header">
