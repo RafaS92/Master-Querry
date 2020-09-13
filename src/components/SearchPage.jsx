@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 import Search from "./Search";
 
 function SearchPage() {
-  const [{ term }, dispatch] = useStateValue();
+  const [{ term = "hello" }, dispatch] = useStateValue();
   const data = Response;
 
   console.log(data);
@@ -24,6 +24,15 @@ function SearchPage() {
           <Search hideButtons />
         </div>
       </div>
+
+      {true && (
+        <div className="searchPage_results">
+          <p className="searchPage_resultsCount">
+            About {data?.searchInformation.formattedTotalResults} results (
+            {data?.searchInformation.formattedSearchTime} seconds) for {term}
+          </p>
+        </div>
+      )}
 
       <div className="searchPage_results"></div>
     </div>
