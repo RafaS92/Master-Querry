@@ -36,7 +36,6 @@ function Search({ hideButtons = false }) {
           <Button variant="outlined" type="submit" onClick={search}>
             I feel dirty
           </Button>
-          <Button variant="outlined">Google Search</Button>
         </div>
       ) : (
         <div className="search_buttons">
