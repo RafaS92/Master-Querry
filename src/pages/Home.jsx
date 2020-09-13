@@ -23,10 +23,7 @@ function Home() {
         </div>
       </div>
       <div className="home_body">
-        <img
-          src="https://upload.wikimedia.org/wikipedia/commons/3/38/PP_icono_2019.svg"
-          alt=""
-        />
+        <img className="logo" src="./images/Withlogo.png" alt="" />
         <div className="input_container">
           <Search />
         </div>

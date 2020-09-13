@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   height: 100vh;
-  background-image: url("https://thumbs.gfycat.com/MagnificentJoyousEyra-small.gif");
+  background-image: url("https://cdn.lowgif.com/full/7951af76d6523f22-shooting-stars-gifs-google-search-web-design-pinterest.gif");
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
@@ -43,7 +43,7 @@
   flex-direction: column;
 }
 
-.home_body > img {
+.logo {
   object-fit: contain;
-  height: 100px;
+  height: 130px;
 }

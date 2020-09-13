@@ -1,11 +1,11 @@
 .search_input {
   display: flex;
   align-items: center;
-  border: 1px solid rgb(245, 162, 8);
+  border: 1px solid rgb(4, 141, 23);
   height: 30px;
   padding: 10px 20px;
   border-radius: 99px;
-  width: 75vw;
+  width: 60vw;
   margin: auto;
   margin-top: 40px;
   max-width: 560;
@@ -23,7 +23,7 @@
 }
 
 .search_inputIcon {
-  color: rgb(7, 11, 224);
+  color: rgb(1, 158, 41);
 }
 
 .search_buttons {
@@ -35,7 +35,7 @@
 .search_buttons button {
   margin: 5px;
   padding: 7px 35px;
-  background-color: hotpink;
+  background-color: rgb(6, 62, 248);
   font-weight: 500;
   font-size: 14px;
   border: 1px solid black;
@@ -45,7 +45,7 @@
 }
 
 .search_buttons button:hover {
-  background-color: rgb(243, 200, 57);
+  background-color: rgb(202, 202, 200);
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
   background-image: -webkit-linear-gradient(top, #eee234d0, #e6e6e6);
 }
