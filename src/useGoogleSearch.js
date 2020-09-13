@@ -19,7 +19,6 @@ const useGoogleSearch = (term) => {
 
     fetchData();
   }, [term]);
-  console.log(CONTEXT_KEY);
 
   return { data };
 };

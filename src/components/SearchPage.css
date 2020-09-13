@@ -1,8 +1,13 @@
+.searchPage {
+  background-color: rgb(204, 201, 201);
+}
+
 .searchPage_header {
   display: flex;
+  height: 100px;
   position: sticky;
   top: 0;
-  background-color: white;
+  background-image: url("https://thumbs.gfycat.com/DetailedOilyFly-max-1mb.gif");
   z-index: 100;
   align-items: flex-start;
   padding: 30px;
@@ -20,4 +25,44 @@
   width: unset;
   margin: unset;
   max-width: unset;
+}
+
+.logo2 {
+  height: 100px;
+}
+
+.search_Page_result {
+  margin: 40px 0;
+}
+
+.search_Page_resultCount {
+  color: rgb(19, 146, 146);
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.search_Page_resultTItle {
+  text-decoration: none;
+}
+.search_Page_resultTItle :hover {
+  text-decoration: underline;
+}
+
+.search_Page_resultTItle > h2 {
+  font-weight: 500;
+}
+
+.search_Page_results {
+  max-width: 650px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  background-color: rgb(255, 255, 255);
+}
+
+.searchPage_resultImage {
+  object-fit: contain;
+  height: 40px;
+  width: 40px;
+  margin-right: 10px;
 }
