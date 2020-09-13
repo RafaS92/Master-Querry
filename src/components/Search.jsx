@@ -34,7 +34,7 @@ function Search({ hideButtons = false }) {
       {!hideButtons ? (
         <div className="search_buttons">
           <Button variant="outlined" type="submit" onClick={search}>
-            I feel dirty
+            Master Search
           </Button>
         </div>
       ) : (
@@ -45,10 +45,7 @@ function Search({ hideButtons = false }) {
             type="submit"
             onClick={search}
           >
-            I feel dirty
-          </Button>
-          <Button className="search_buttonsHid" variant="outlined">
-            Google Search
+            Master Search
           </Button>
         </div>
       )}
