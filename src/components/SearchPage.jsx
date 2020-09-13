@@ -5,6 +5,7 @@ import useGoogleSearch from "../useGoogleSearch";
 import Response from "../response";
 import { Link } from "react-router-dom";
 import Search from "./Search";
+import { ListItemSecondaryAction } from "@material-ui/core";
 
 function SearchPage() {
   const [{ term = "hello" }, dispatch] = useStateValue();
@@ -15,10 +16,7 @@ function SearchPage() {
     <div className="searchPage">
       <div className="searchPage_header">
         <Link to="/">
-          <img
-            alt=""
-            src="https://4.bp.blogspot.com/-c0HYC0CsITI/UBDb6v2nE4I/AAAAAAAAEHs/xb6UCx8Ka74/s1600/storm+thunder+lightning+night+sky+photo+pics+animation+gifs+free+download+3D+HD+wallpaper+background+ecards+decoration+graphic+arts+for+websites+amazing+landscape+with+cactuses+and+lightning.gif"
-          />
+          <img alt="" src="./images/Withlogo.png" />
         </Link>
         <div className="searchPage_headerBody">
           <Search hideButtons />
@@ -31,6 +29,15 @@ function SearchPage() {
             About {data?.searchInformation.formattedTotalResults} results (
             {data?.searchInformation.formattedSearchTime} seconds) for {term}
           </p>
+          {data?.items.map((item) => (
+            <div className="searchPage_result">
+              <a href={item.link}>{item.displayLink}</a>
+              <a className="searchPage_resultTitle" href={item.link}>
+                <h2>{item.link}</h2>
+              </a>
+              <p className="searchPage_resultSnippet">{item.snippet}</p>
+            </div>
+          ))}
         </div>
       )}
 
