@@ -16,7 +16,7 @@ function SearchPage() {
     <div className="searchPage">
       <div className="searchPage_header">
         <Link to="/">
-          <img alt="" src="./images/Withlogo.png" />
+          <img alt="" className="logo2" src="./images/Withlogo.png" />
         </Link>
         <div className="searchPage_headerBody">
           <Search hideButtons />
@@ -24,15 +24,15 @@ function SearchPage() {
       </div>
 
       {true && (
-        <div className="searchPage_results">
-          <p className="searchPage_resultsCount">
+        <div className="search_Page_results">
+          <p className="search_Page_resultCount ">
             About {data?.searchInformation.formattedTotalResults} results (
             {data?.searchInformation.formattedSearchTime} seconds) for {term}
           </p>
           {data?.items.map((item) => (
-            <div className="searchPage_result">
+            <div className="search_Page_result">
               <a href={item.link}>{item.displayLink}</a>
-              <a className="searchPage_resultTitle" href={item.link}>
+              <a className="search_Page_resultTItle " href={item.link}>
                 <h2>{item.link}</h2>
               </a>
               <p className="searchPage_resultSnippet">{item.snippet}</p>
@@ -40,8 +40,6 @@ function SearchPage() {
           ))}
         </div>
       )}
-
-      <div className="searchPage_results"></div>
     </div>
   );
 }

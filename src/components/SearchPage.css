@@ -21,3 +21,34 @@
   margin: unset;
   max-width: unset;
 }
+
+.logo2 {
+  height: 100px;
+}
+
+.search_Page_result {
+  margin: 40px 0;
+}
+
+.search_Page_resultCount {
+  color: teal;
+  font-size: 15px;
+}
+
+.search_Page_resultTItle {
+  text-decoration: none;
+}
+.search_Page_resultTItle :hover {
+  text-decoration: underline;
+}
+
+.search_Page_resultTItle > h2 {
+  font-weight: 500;
+}
+
+.search_Page_results {
+  max-width: 650px;
+  margin-top: 20px;
+  margin-left: 240px;
+  margin-bottom: 100px;
+}
