@@ -26,6 +26,15 @@
   align-items: center;
   min-width: 13vw;
   justify-content: space-between;
+  width: 300px;
+}
+
+.home_headerLeft {
+  display: flex;
+  align-items: center;
+  min-width: 13vw;
+  justify-content: space-around;
+  width: 350px;
 }
 
 .home_headerLRight > .MuiSvgIcon-root {
@@ -50,5 +59,12 @@
 
 .img{
   height: 70px;
+  
+}
+
+.img2{
+  height: 60px;
+  border-radius: 10px;
+  background-blend-mode: soft-light;
   
 }
