@@ -2,13 +2,11 @@ import React from "react";
 import "./SearchPage.css";
 import { useStateValue } from "../stateProvider";
 import useGoogleSearch from "../useGoogleSearch";
-import Response from "../response";
 import { Link } from "react-router-dom";
 import Search from "./Search";
-import { ListItemSecondaryAction } from "@material-ui/core";
 
 function SearchPage() {
-  const [{ term = "hello" }, dispatch] = useStateValue();
+  const [{ term = "hello" },] = useStateValue();
   const { data } = useGoogleSearch(term);
 
   console.log(data);

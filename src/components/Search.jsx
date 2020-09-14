@@ -8,7 +8,7 @@ import { actionTypes } from "../reducer";
 import { useStateValue } from "../stateProvider";
 
 function Search({ hideButtons = false }) {
-  const [{}, dispatch] = useStateValue();
+  const [, dispatch] = useStateValue();
   const [input, setInput] = useState("");
   const history = useHistory();
 
@@ -38,17 +38,17 @@ function Search({ hideButtons = false }) {
           </Button>
         </div>
       ) : (
-        <div className="search_buttons">
-          <Button
-            className="search_buttonsHid"
-            variant="outlined"
-            type="submit"
-            onClick={search}
-          >
-            Master Search
+          <div className="search_buttons">
+            <Button
+              className="search_buttonsHid"
+              variant="outlined"
+              type="submit"
+              onClick={search}
+            >
+              Master Search
           </Button>
-        </div>
-      )}
+          </div>
+        )}
     </form>
   );
 }

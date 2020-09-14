@@ -4,7 +4,7 @@ import { a } from "react-router-dom";
 import AppsIcon from "@material-ui/icons/Apps";
 import { Avatar } from "@material-ui/core";
 import Search from "../components/Search";
-import SearchPage from "../components/SearchPage";
+
 
 function Home() {
   return (
@@ -17,7 +17,8 @@ function Home() {
 
         <div className="home_headerLRight">
           <a href="https://shopzon-9dc37.web.app/"><img className="img" src="./images/Shopper.png" alt="" /></a>
-          <a to="/images">Images</a>
+          <a href="https://shopzon-9dc37.web.app/"><img className="img" src="./images/Shopper.png" alt="" /></a>
+
           <AppsIcon />
           <Avatar />
         </div>
