@@ -1,8 +1,5 @@
 import React from "react";
 import "./Home.css";
-import { a } from "react-router-dom";
-import AppsIcon from "@material-ui/icons/Apps";
-import { Avatar } from "@material-ui/core";
 import Search from "../components/Search";
 
 
