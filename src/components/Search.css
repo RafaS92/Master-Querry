@@ -55,6 +55,8 @@
 }
 
 
+
+
 @media (max-width: 411px) {
   .search_input {
     display: flex;
@@ -107,12 +109,25 @@
 
 @media (max-width: 600px) {
   .search_input {
-    display: none;
+    display: flex;
+    align-items: center;
+    border: 1px solid rgb(4, 141, 23);
+    height: 30px;
+    padding: 10px 20px;
+    border-radius: 99px;
+    width: 65vw;
+    margin: auto;
+    margin-top: 40px;
+    max-width: 560;
   }
 
   .search_input > input {
-    display: none;
+    width: 35vw;
+    padding: 10px 20px;
+    font-size: medium;
+    border: none;
   }
+
 
  
   

@@ -1,8 +1,5 @@
 import React from "react";
 import "./Home.css";
-import { a } from "react-router-dom";
-import AppsIcon from "@material-ui/icons/Apps";
-import { Avatar } from "@material-ui/core";
 import Search from "../components/Search";
 
 
@@ -11,13 +8,13 @@ function Home() {
     <div className="home">
       <div className="home_header">
         <div className="home_headerLeft">
-          <a href="https://picpock-e2966.web.app/"><img className="img" src="./images/Logopic.png" alt="" /></a>
-          <a href="https://chillflix-f03ad.web.app/"><img className="img" src="./images/Chillflix.png" alt="" /></a>
+          <a href="https://picpock-e2966.web.app/"><img className="img " src="./images/Logopic.png" alt="" /></a>
+          <a href="https://chillflix-f03ad.web.app/"><img className="img " src="./images/Chillflix.png" alt="" /></a>
         </div>
 
         <div className="home_headerLRight">
-          <a href="https://shopzon-9dc37.web.app/"><img className="img" src="./images/Shopper.png" alt="" /></a>
-          <a href="https://www.rafaelsvaldez.com/"><img className="img2" src="./images/RV.jpg" alt="" /></a>
+          <a href="https://shopzon-9dc37.web.app/"><img className="img " src="./images/Shopper.png" alt="" /></a>
+          <a href="https://www.rafaelsvaldez.com/"><img className="img2 " src="./images/RV.jpg" alt="" /></a>
 
         </div>
       </div>

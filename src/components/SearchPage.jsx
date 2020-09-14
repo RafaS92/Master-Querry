@@ -9,10 +9,10 @@ function SearchPage() {
   const [{ term = "hello" },] = useStateValue();
   const { data } = useGoogleSearch(term);
 
-  console.log(data);
 
   // Mock API
   //   const data = Response;
+  // classname={window.innerWidth <= 600 ? "none" : ""}
 
   return (
     <div className="searchPage">
@@ -21,9 +21,11 @@ function SearchPage() {
           <img alt="" className="logo2" src="./images/Withlogo.png" />
         </Link>
         <div className="searchPage_headerBody">
-          <Search hideButtons />
+          {(window.innerWidth <= 600 ? "" : <Search hideButtons />)}
+
         </div>
       </div>
+
 
       {term && (
         <div className="search_Page_results">
@@ -32,8 +34,8 @@ function SearchPage() {
             {data?.searchInformation.formattedSearchTime} seconds) for{" "}
             <strong>{term}</strong>
           </p>
-          {data?.items.map((item) => (
-            <div className="search_Page_result">
+          {data?.items.map((item, id) => (
+            <div className="search_Page_result" item={item} key={id}>
               <a href={item.link}>
                 {item.pagemap?.cse_image?.length > 0 &&
                   item.pagemap?.cse_image[0]?.src && (
